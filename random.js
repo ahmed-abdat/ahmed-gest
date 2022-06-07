@@ -1,7 +1,7 @@
 let rendom = [];
 var k = 1;
 do {
-  var name = prompt("enter your name ? or en empty string to cancel");
+  var name = prompt("أدخل إسمك ؟ أو إضغض موافق للخروج");
   if (!(name === "null")) {
     rendom.push(name);
   }
@@ -23,7 +23,7 @@ console.log(randomNumber);
 if (rendom.length) {
   if (k) {
     let container = `<h1 class="content">
-      🎉${randomName} : و الفائز هو
+     <span> 🎉${randomName} <span/>: و الفائز هو
       </h1>`;
 
     document.write(container);
