@@ -23,7 +23,7 @@ console.log(randomNumber);
 if (rendom.length) {
   if (k) {
     let container = `<h1 class="content">
-     <span> 🎉${randomName} <span/>: و الفائز هو
+     <span> 🎉${randomName} </span>: و الفائز هو
       </h1>`;
 
     document.write(container);
