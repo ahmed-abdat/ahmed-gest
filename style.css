@@ -17,10 +17,6 @@ body {
   font-size: 40px;
   color: #44f9d7;
   font-weight: 600;
-  
-}
-span{
-   font-size: inherit;
    animation-name: scale;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
