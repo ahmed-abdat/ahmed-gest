@@ -7,17 +7,17 @@
 }
 
 :root {
-  --main-color: #d61c4e;
-  --second-color: #f77e21;
-  --third-color: #fac213;
-  --light-color: #fef9a7;
+  --main-color: #C70A80;
+  --second-color: #590696;
+  --third-color: #FBCB0A;
+  --light-color: #EEEEEE;
 }
 
 body {
   font-family: "Cairo", sans-serif;
   width: 100%;
   height: 100vh;
-  padding-inline: 10px;
+  padding-inline: 20px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
