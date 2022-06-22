@@ -87,6 +87,7 @@ body {
   color: var(--light-color);
   border: none;
   cursor: pointer;
+  outline-color: var(--second-color);
   padding: 5px;
   border-radius: inherit;
   -webkit-border-radius: inherit;
