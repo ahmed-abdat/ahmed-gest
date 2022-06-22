@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-color: #d61c4e;
+  --second-color: #f77e21;
+  --third-color: #fac213;
+  --light-color: #fef9a7;
+}
+
 body {
   font-family: "Cairo", sans-serif;
   width: 100%;
@@ -16,11 +23,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #333;
+  background: linear-gradient(45deg, var(--main-color), var(--second-color));
 }
 
 .inputs {
-  background: linear-gradient(to top, #e91e63, #673ab7);
+  background-color: var(--third-color);
   padding: 10px;
   display: flex;
   align-items: center;
@@ -37,10 +44,10 @@ body {
 }
 .inputs h2 {
   font-size: 35px;
- margin: 0 0 10px;
+  margin: 0 0 10px;
   font-weight: 600;
   text-align: center;
-  color: #009688;
+  color: var(--light-color);
 }
 
 .inputs .date {
@@ -56,19 +63,23 @@ body {
 .inputs .date input {
   margin-bottom: 8px;
   padding: 10px;
-  border: 1px solid #928cff;
+  border: 1px solid var(--third-color);
+  font-size: 25px;
+  color: var(--main-color);
+  text-align: right;
   outline: none;
   border-radius: inherit;
   -webkit-border-radius: inherit;
   -moz-border-radius: inherit;
   -ms-border-radius: inherit;
   -o-border-radius: inherit;
+  font-weight: bold;
 }
 .date button {
   font-size: 25px;
   font-weight: bold;
-  background-color: #009688;
-  color: #fff;
+  background-color: var(--second-color);
+  color: var(--light-color);
   border: none;
   cursor: pointer;
   padding: 5px;
@@ -85,7 +96,7 @@ body {
   margin-top: 60px;
   text-align: center;
   font-size: 30px;
-  color: #44f9d7;
+  color: var(--third-color);
   font-weight: 600;
   animation-name: scale;
   animation-duration: 1s;
