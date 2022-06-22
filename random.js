@@ -1,31 +1,30 @@
 let rendom = [];
-var k = 1;
-do {
-  var name = prompt("enter your name ? or en empty string to cancel");
-  if (!(name === "null")) {
-    rendom.push(name);
-  }
+let btn = document.getElementById("btn");
+let start = document.getElementById("rand");
+let inp = document.getElementById("name");
+let show = document.getElementById("show");
 
-  if (name) {
-    var k = 0;
-  } else {
-    var k = 1;
+
+
+
+let ran = btn.onclick = function () {
+  if (inp.value != "") {
+    rendom.push(inp.value);
+    console.log(rendom);
+    inp.value = "";
   }
-} while (name);
-rendom.pop(rendom.length - 1);
-console.log(k);
+};
 console.log(rendom);
 
-let randomNumber = Math.floor(Math.random() * rendom.length);
 
+
+
+
+let result = start.onclick = function(){
+  let randomNumber = Math.floor(Math.random() * rendom.length);
 let randomName = rendom[randomNumber];
-console.log(randomNumber);
-if (rendom.length) {
-  if (k) {
-    let container = `<h1 class="content">
-      🎉${randomName} : و الفائز هو
-      </h1>`;
-
-    document.write(container);
-  }
+show.innerHTML = `🎉 والفائز هو ${randomName}`;
 }
+
+
+
